@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Digital Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>Our Digital Services</h1>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Popular Services</h2>
+      <div class="services-grid">
+        <div class="service-card" id="service1">
+          <img src="images/project-2.jpg" alt="Web Design">
+          <h3>Web Design</h3>
+          <p>Create stunning websites with responsive designs.</p>
+          <button onclick="viewServiceDetails('service1')">Learn More</button>
+        </div>
+        <div class="service-card" id="service2">
+          <img src="images/project-3.jpg" alt="SEO Optimization">
+          <h3>SEO Optimization</h3>
+          <p>Improve your website's search engine ranking.</p>
+          <button onclick="viewServiceDetails('service2')">Learn More</button>
+        </div>
+        <div class="service-card" id="service3">
+          <img src="images/project-4.jpg" alt="Digital Marketing">
+          <h3>Digital Marketing</h3>
+          <p>Boost your online presence and sales with marketing strategies.</p>
+          <button onclick="viewServiceDetails('service3')">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="formResponse"></div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Digital Services Inc.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
